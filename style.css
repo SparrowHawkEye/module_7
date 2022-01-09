@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+}
+.car-container {
+  width: 75vw;
+  height: 100vh;
+  display: flex;
+  /* background-color: antiquewhite; */
+  z-index: 9999;
+}
+.wood {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  /* left: 0; */
+  animation: 8s infinite linear movingwood;
+}
+/* .wood:hover {
+} */
+
+.car {
+  font-size: 200px;
+  color: #333;
+  line-height: 832%;
+  /* z-index: 9999;
+  position: absolute;
+  left: 20%;
+  bottom: -22%;
+  animation: 1s infinite linear car; */
+}
+
+@keyframes movingwood {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+  /* 0% {
+    transform: translateX(-0);
+  } */
+  /* 10% {
+    transform: translateX(-7.5%);
+  }
+  20% {
+    transform: translateX(-15%);
+  }
+  30% {
+    transform: translateX(-22.5%);
+  }
+  40% {
+    transform: translateX(-30%);
+  } */
+  /* 50% {
+    transform: translateX(-37.5%);
+  } */
+  /* 60% {
+    transform: translateX(-45%);
+  }
+  70% {
+    transform: translateX(-52.5%);
+  }
+  80% {
+    transform: translateX(-60%);
+  }
+  90% {
+    transform: translateX(-67.5%);
+  } */
+  /* 100% {
+    transform: translateX(-75%);
+  } */
+}
+
+@keyframes car {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
